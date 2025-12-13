@@ -26,7 +26,7 @@ export default function Hero() {
         <meta property="og:description" content="Frontend Developer specializing in React and Tailwind CSS. Explore my projects and portfolio." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={Img} />
-        <meta property="og:url" content="https://rohaportfolio.com/" />
+        <meta property="og:url" content="https://rohanportfolio-yhvc.onrender.com/" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -41,7 +41,7 @@ export default function Hero() {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Rohan Panwar",
-            "url": "https://rohaportfolio.com/",
+            "url": "https://rohanportfolio-yhvc.onrender.com/",
             "sameAs": [
               "https://www.linkedin.com/in/rohan-panwar",
               "https://github.com/RohanPanwar01"
