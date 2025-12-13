@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Code, Layout, Zap } from "lucide-react";
-import Img1 from "../image/38.jpg"
+import Img1 from "../image/38.jpg";
 
 export default function About() {
   return (
@@ -15,40 +15,21 @@ export default function About() {
       </div>
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
-        {/* 👤 Image with Neon Ring */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="flex justify-center"
-        >
-          <div className="relative">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 blur-2xl opacity-70" />
-            <div className="relative w-72 h-72 rounded-full p-1 bg-gradient-to-r from-cyan-400 to-purple-500">
-              <img
-                src={Img1}
-                alt="Rohan – Full Stack Developer"
-                className="w-full h-full rounded-full object-cover bg-[#020617]"
-              />
-            </div>
-          </div>
-        </motion.div>
-
-        {/* 📝 Text Content */}
+        {/* 📝 TEXT CONTENT (FIRST ON MOBILE) */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
+          className="order-1 md:order-2"
         >
           <p className="text-sm uppercase tracking-widest text-gray-400">
             About Me
           </p>
 
           <h2 className="mt-4 text-3xl md:text-4xl font-bold leading-tight">
-            Building <span className="text-cyan-400">modern</span> &
-            <span className="text-purple-400"> scalable</span> web experiences
+            Building <span className="text-cyan-400">modern</span> &{" "}
+            <span className="text-purple-400">scalable</span> web experiences
           </h2>
 
           <p className="mt-6 text-gray-400 leading-relaxed max-w-xl">
@@ -61,6 +42,7 @@ export default function About() {
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
             <motion.div
               whileHover={{ y: -6 }}
+              transition={{ type: "spring", stiffness: 300 }}
               className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-400/40 transition"
             >
               <Code className="text-cyan-400 mb-4" size={22} />
@@ -69,6 +51,7 @@ export default function About() {
 
             <motion.div
               whileHover={{ y: -6 }}
+              transition={{ type: "spring", stiffness: 300 }}
               className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-purple-400/40 transition"
             >
               <Layout className="text-purple-400 mb-4" size={22} />
@@ -77,6 +60,7 @@ export default function About() {
 
             <motion.div
               whileHover={{ y: -6 }}
+              transition={{ type: "spring", stiffness: 300 }}
               className="p-6 rounded-xl bg-white/5 border border-white/10 hover:border-green-400/40 transition"
             >
               <Zap className="text-green-400 mb-4" size={22} />
@@ -94,6 +78,26 @@ export default function About() {
             >
               Download Resume
             </a>
+          </div>
+        </motion.div>
+
+        {/* 👤 IMAGE (BELOW TEXT ON MOBILE, LEFT ON DESKTOP) */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex justify-center order-2 md:order-1 mt-16 md:mt-0"
+        >
+          <div className="relative">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 blur-2xl opacity-70" />
+            <div className="relative w-72 h-72 rounded-full p-1 bg-gradient-to-r from-cyan-400 to-purple-500">
+              <img
+                src={Img1}
+                alt="Rohan – Full Stack Developer"
+                className="w-full h-full rounded-full object-cover bg-[#020617]"
+              />
+            </div>
           </div>
         </motion.div>
       </div>
