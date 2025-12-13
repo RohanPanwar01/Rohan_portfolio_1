@@ -11,7 +11,6 @@ root.render(
  <BrowserRouter>
  <HelmetProvider>
     <App />
-  
     </HelmetProvider>
     </BrowserRouter>
 );
