@@ -154,14 +154,14 @@ export default function Header() {
                 </button>
               ))}
 
-              <button
+              {/* <button
                 onClick={() => handleNav({ id: "contact", type: "scroll" })}
                 className="mt-2 px-4 py-2 rounded-full
                 bg-gradient-to-r from-blue-500 to-cyan-400
                 text-white font-semibold"
               >
                 Get Quote
-              </button>
+              </button> */}
             </div>
           </motion.div>
         )}

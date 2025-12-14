@@ -94,24 +94,24 @@ export default function Projects() {
 
 const projects = [
   {
-    title: "Excel Analytics Platform",
-    desc: "Full-stack MERN analytics platform with charts, uploads and insights.",
-    tech: ["React", "Node.js", "MongoDB", "Chart.js"],
-    demo: "#",
+    title: "CCTV Security Solutions",
+    desc: " A professional CCTV services website showcasing security solutions, installation services, and contact features. Optimized for performance and SEO.",
+    tech: ["React", "Tailwind CSS", "SEO", "Responsive UI"],
+    demo: "https://cctv-pgug.onrender.com/",
     github: "#",
   },
   {
     title: "Bus Booking UI",
-    desc: "Modern and responsive bus search & booking interface.",
+    desc: "A modern and responsive bus search and booking interface that allows users to search routes, view available buses, compare timings and prices, and proceed with booking through a clean, user-friendly UI optimized for all devices.",
     tech: ["React", "Tailwind CSS", "UX Design"],
     demo: "#",
     github: "#",
   },
   {
-    title: "Portfolio Website",
-    desc: "Animated developer portfolio with modern UI & smooth interactions.",
+    title: "Self-Study Library Management System",
+    desc: "A responsive web application designed to manage self-study library operations, student memberships, and seat availability efficiently.",
     tech: ["React", "Framer Motion", "Tailwind"],
-    demo: "#",
+    demo: "https://self-study-library.onrender.com/",
     github: "#",
   },
 ];
