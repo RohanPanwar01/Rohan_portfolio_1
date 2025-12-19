@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
-import Logo1 from "../image/Logo1.jpg";
+import Logo from "../image/logo.jpeg";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -73,22 +73,22 @@ export default function Header() {
 
         {/* 🔷 Logo */}
         <NavLink to="/" className="flex items-center gap-3 select-none">
-          {/* <motion.img
+          <motion.img
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4 }}
-            src={Logo1}
-            alt="AV CCTV Indore"
+            src={Logo}
+            alt="Rohan Panwar"
             className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover
             border-2 border-blue-500 shadow-lg hover:scale-105 transition"
-          /> */}
+          />
           <div className="leading-tight">
             <p className="text-white font-bold text-lg sm:text-xl">
+            Rohan Panwar
+            </p>
+            <p className="text-gray-400 text-sm sm:text-base">
               Portfolio
             </p>
-            {/* <p className="text-gray-400 text-sm sm:text-base">
-              CCTV Installation
-            </p> */}
           </div>
         </NavLink>
 
